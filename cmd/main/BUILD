@@ -10,8 +10,8 @@ genrule(
 go_binary(
     name = "windows",
     srcs = [
+        ":resource-syso",
         "main.go",
-        "resource.syso",
     ],
     goarch = "amd64",
     goos = "windows",
